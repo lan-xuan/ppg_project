@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>dm_body_shop_win_sales_tracking_当年历史月</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2024/04/26 17:12:39.049</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2024/04/26 17:12:39.049</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>fine_dm</name>
+    <server>101.132.38.200</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>fine_dm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86ad795838b49fd228ea288fd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.cachePrepStmts</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
+        <attribute>10000</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.rewriteBatchedStatements</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCompression</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useServerPrepStmts</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>fine_dw</name>
+    <server>101.132.38.200</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>fine_dw</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86ad795838b49fd228ea288fd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.cachePrepStmts</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
+        <attribute>10000</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.rewriteBatchedStatements</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCompression</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useServerPrepStmts</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>表输入</from>
+      <to>表输出</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>表输入</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>fine_dw</connection>
+    <sql>
+/*
+${start_date}  -- 变量增量参数
+
+${mysql_yesterday_d_month}  -- 固定当月
+
+*/
+with s1 as ( 
+select * from  
+(
+SELECT
+uuid() as _id
+,mainname
+,maincode
+,shopcode as shop_code
+,shopname
+,shoporcalcode
+,servicecode
+,servicename
+,`year_month`
+,sum(amountshop) as amountshop
+,sum(amountmain) as amountmain
+,maintype
+,salearea
+,salesman
+,etl_time
+FROM
+	dw_sales_tracking_table_lzh 
+		where left(`year_month`,7) = concat(left(${start_date},4),'-',right(${start_date},2)) -- 时间参数
+group by 
+mainname
+,maincode
+,shopcode
+,shopname
+,shoporcalcode
+,servicecode
+,servicename
+,`year_month`
+,maintype
+,salearea
+,salesman
+,etl_time 
+) a )
+,s3 as (
+select * from  fine_dw.dw_customer_master_list a 
+	where left(a.sales_month,6) &lt;=  ${mysql_yesterday_d_month})  
+,s2 as (
+SELECT DISTINCT sales_month,customer_code,customer_name,shop_code,shop_name,shoporcal_code,vendor_name from dw_transaction_detail_sh WHERE left(sales_month,4) >= '2022'
+)
+,t1 as (
+	SELECT distinct
+	  a._id,
+		a.`year_month` as sales_month,
+		a.shop_code,
+		a.amountmain,
+		a.amountshop,
+		b.proj_name,
+		b.proj_name_en,
+		b.channel,
+		c.sid,
+		a.shoporcalcode as ship_to_code	
+	FROM
+		s1 a
+		LEFT JOIN s3 b ON a.maincode = b.customer_code and a.`year_month` = CONCAT(left(b.sales_month,4),'-',right(b.sales_month,2)) 
+		LEFT JOIN ( SELECT distinct shop_code, maincode,sid 
+		           FROM fine_ods.ods_store_management where sid is not null 
+		          ) c on a.shop_code = c.shop_code  and a.maincode = c.maincode 
+		            
+	WHERE b.channel in('MM','MSO') and c.sid is not null 
+	
+)
+,ss7 as (
+	SELECT
+		a.sales_month,
+		a.customer_code,
+		a.customer_name,
+		a.shop_code,
+		a.shop_name,
+		b.proj_name,
+		b.proj_name_en,
+		b.channel,
+		c.sid,
+		a.shoporcal_code as ship_to_code,
+		a.vendor_name		
+	FROM
+		s2 a
+		LEFT JOIN s3 b ON a.customer_code = b.customer_code  and a.sales_month = b.sales_month
+		LEFT JOIN ( SELECT distinct shop_code, shop_name, maincode,sid 
+		           FROM fine_ods.ods_store_management where sid is not null 
+		           ) c on a.shop_code = c.shop_code  and a.customer_code = c.maincode 
+		
+	WHERE b.channel in('MM','MSO') and c.sid is not null 
+)
+	-- 将数据都拉出来
+
+,tt2 as (
+select distinct sid from t1  where channel ='MM'
+) 
+, tt3 as (
+select distinct
+	sales_month,
+	CONCAT( LEFT ( sales_month, 4 ), '年', RIGHT ( sales_month, 2 ), '月' ) AS sec_1
+FROM
+	t1 
+where sales_month = concat(left(${start_date},4),'-',right(${start_date},2)) -- 时间参数
+
+)
+,t2 as (
+select DISTINCT 
+	sales_month,
+	sid,
+	sec_1,
+	sec_2,
+	sec_3
+from tt2
+ join tt3
+ on 1= 1
+ join
+(
+SELECT 
+	'MM Gross Sales' as sec_2,
+	'@PPG Price'  as sec_3
+union all 
+SELECT 
+	'MM Gross Sales' as sec_2,
+	'@Bodyshop Price'  as sec_3
+union ALL
+SELECT 
+	'MSO Gross Sales' as sec_2,
+	'@PPG Price'  as sec_3) a 
+on 1=1 
+union all 
+select DISTINCT 
+	DATE_FORMAT(NOW(), '%Y%m') as sales_month,
+	sid,
+	DATE_FORMAT(NOW(), '%Y年%m月') AS sec_1,
+	sec_2,
+	sec_3
+from tt2
+join
+(
+SELECT 
+	'MM Gross Sales' as sec_2,
+	'Open + Closed Order'  as sec_3
+union all 
+SELECT 
+	'MM Gross Sales' as sec_2,
+	'Closed Order'  as sec_3
+union ALL
+SELECT 
+	'MSO Gross Sales' as sec_2,
+	'Open + Closed Order'  as sec_3) a
+on 1=1 
+)
+,t3 as (
+SELECT 
+	LEFT( sales_month, 4 ) AS _year,
+	RIGHT ( sales_month, 2 ) AS _month,
+	sid,
+	 CASE
+	  when sales_month = DATE_FORMAT(NOW(), '%Y%m') then 'MTD'
+	  WHEN RIGHT(sales_month,2) ='01' THEN 'JAN'
+	  WHEN RIGHT(sales_month,2) ='02' THEN 'FEB'
+	  WHEN RIGHT(sales_month,2) ='03' THEN 'MAR'
+	  WHEN RIGHT(sales_month,2) ='04' THEN 'APR'
+	  WHEN RIGHT(sales_month,2) ='05' THEN 'MAY'
+	  WHEN RIGHT(sales_month,2) ='06' THEN 'JUN'
+	  WHEN RIGHT(sales_month,2) ='07' THEN 'JUL'
+	  WHEN RIGHT(sales_month,2) ='08' THEN 'AUG'
+	  WHEN RIGHT(sales_month,2) ='09' THEN 'SEP'
+	  WHEN RIGHT(sales_month,2) ='10' THEN 'OCT'
+	  WHEN RIGHT(sales_month,2) ='11' THEN 'NOV'
+	  WHEN RIGHT(sales_month,2) ='12' THEN 'DEC'
+	END as sec_1,
+	sec_2,
+	sec_3 
+FROM
+	t2
+union all 
+select
+	LEFT(sales_month,4) AS YEAR,
+		CASE
+	  WHEN RIGHT(sales_month,2) BETWEEN 1 AND 3 THEN 'Q1'
+	  WHEN RIGHT(sales_month,2) BETWEEN 4 AND 6 THEN 'Q2'
+	  WHEN RIGHT(sales_month,2) BETWEEN 7 AND 9 THEN 'Q3'
+	  WHEN RIGHT(sales_month,2) BETWEEN 10 AND 12 THEN 'Q4'
+  END AS _month,
+	sid,
+	CASE
+	  WHEN RIGHT(sales_month,2) BETWEEN 1 AND 3 THEN 'Q1'
+	  WHEN RIGHT(sales_month,2) BETWEEN 4 AND 6 THEN 'Q2'
+	  WHEN RIGHT(sales_month,2) BETWEEN 7 AND 9 THEN 'Q3'
+	  WHEN RIGHT(sales_month,2) BETWEEN 10 AND 12 THEN 'Q4'
+  END AS sec_1,
+	sec_2,
+	sec_3
+FROM
+	t2 )
+,t4 as (
+SELECT
+	LEFT(sales_month,4) AS _year,
+	right(sales_month,2) as _month,
+	sid, 
+	'MM Gross Sales' as sec_2,
+	'@PPG Price'  as sec_3,
+	sum(amountmain)  as sz
+FROM
+	t1 
+WHERE
+	channel = 'MM' 
+	AND CONCAT( LEFT ( sales_month, 4 ), '-', RIGHT ( sales_month, 2 ) ) &lt;&gt; DATE_FORMAT( NOW(), '%Y-%m' ) -- 时间参数
+group by sales_month,sid
+--  之前月份 MM ppg价格
+union ALL
+SELECT
+	LEFT(sales_month,4) AS _year,
+	right(sales_month,2) as _month,
+	sid,
+	'MM Gross Sales' as sec_2,
+	'@Bodyshop Price'  as sec_3,
+	sum(amountshop)  as sz
+FROM
+	t1 
+WHERE
+	channel = 'MM' 
+	AND CONCAT( LEFT ( sales_month, 4 ), '-', RIGHT ( sales_month, 2 ) ) &lt;&gt; DATE_FORMAT( NOW(), '%Y-%m' ) -- 时间参数
+group by sales_month,sid
+union all 
+SELECT
+	LEFT(sales_month,4) AS _year,
+	right(sales_month,2) as _month,
+	sid,
+	'MSO Gross Sales' as sec_2,
+	'@PPG Price'  as sec_3,
+	sum(amountmain)  as sz
+FROM
+	t1 
+WHERE
+	channel = 'MSO' 
+	AND CONCAT( LEFT ( sales_month, 4 ), '-', RIGHT ( sales_month, 2 ) ) &lt;&gt; DATE_FORMAT( NOW(), '%Y-%m' ) -- 时间参数
+group by sales_month,sid
+UNION ALL 
+select 
+		LEFT(sales_month,4) AS _year,
+		right(sales_month,2) as _month,
+		sid,
+		sec_2,
+		sec_3,
+		sum(sz) as sz
+	from (
+	SELECT
+		DATE_FORMAT(NOW(), '%Y%m') as sales_month,
+		sid,
+		proj_name_en,
+		'MM Gross Sales' as sec_2,
+		'Open + Closed Order'  as sec_3,
+		case when proj_name_en = 'SVW'
+			THEN sum(amountshop) 
+			else sum(amountmain) 
+		end as sz
+	FROM
+		t1 
+	WHERE
+		channel = 'MM' 
+		AND left(sales_month,7) &lt;&gt; DATE_FORMAT( NOW(), '%Y-%m' ) -- 时间参数
+	group by sid,proj_name_en) a
+group by 
+		sales_month,
+		sid,
+		sec_2,
+		sec_3
+union all
+select 
+		LEFT(sales_month,4) AS _year,
+		right(sales_month,2) as _month,
+		sid,
+		sec_2,
+		sec_3,
+		sum(sz) as sz
+	from (
+	SELECT
+		DATE_FORMAT(NOW(), '%Y%m') as sales_month,
+		sid,
+		proj_name_en,
+		'MM Gross Sales' as sec_2,
+		'Closed Order'  as sec_3,
+		case when proj_name_en = 'SVW'
+			THEN sum(amountshop) 
+			else sum(amountmain) 
+		end as sz
+	FROM
+		t1 
+	WHERE
+		channel = 'MM' 
+		AND left(sales_month,7) &lt;&gt; DATE_FORMAT( NOW(), '%Y-%m' ) -- 时间参数
+	group by sid,proj_name_en) a
+group by 
+		sales_month,
+		sid,
+		sec_2,
+		sec_3
+union ALL
+	SELECT
+		LEFT(DATE_FORMAT(NOW(), '%Y%m'),4) AS _year,
+		right(DATE_FORMAT(NOW(), '%Y%m'),2) as _month,
+		sid,
+		'MSO Gross Sales' as sec_2,
+		'Open + Closed Order'  as sec_3,
+		sum(amountmain) sz
+	FROM
+		t1 
+	WHERE
+		channel = 'MSO' 
+		AND left(sales_month,7) &lt;&gt; CONCAT(DATE_FORMAT( NOW(), '%Y-%m' ),'') -- 时间参数
+	group by sid)
+,t5 as (
+select _year,_month,sid,sec_2,sec_3,sz from t4
+union all 
+select
+	_year,
+	CASE
+	  WHEN _month BETWEEN 1 AND 3 THEN 'Q1'
+	  WHEN _month BETWEEN 4 AND 6 THEN 'Q2'
+	  WHEN _month BETWEEN 7 AND 9 THEN 'Q3'
+	  WHEN _month BETWEEN 10 AND 12 THEN 'Q4'
+  END AS _month,
+	sid,
+	sec_2,
+	sec_3,
+	sum(sz) as  sz
+FROM
+	t4
+group by 
+	_year,
+	sid,
+	CASE
+	  WHEN _month BETWEEN 1 AND 3 THEN 'Q1'
+	  WHEN _month BETWEEN 4 AND 6 THEN 'Q2'
+	  WHEN _month BETWEEN 7 AND 9 THEN 'Q3'
+	  WHEN _month BETWEEN 10 AND 12 THEN 'Q4'
+  END,
+	sec_2,
+	sec_3
+	) -- 数据汇总
+,t6 as (
+SELECT
+	sid,
+	GROUP_CONCAT( proj_name SEPARATOR ',' ) AS proj_name_en 
+FROM (
+select DISTINCT sid,proj_name from ss7 WHERE channel = 'MM' ORDER BY sid,proj_name) a
+group by sid
+)	-- MM proj_name
+,t14 as(
+SELECT
+	sid,
+	GROUP_CONCAT( shop_code SEPARATOR ',' ) AS mm_shop_code 
+FROM (
+select DISTINCT sid,shop_code from ss7 WHERE channel = 'MM' ORDER BY sid,shop_code) a
+group by sid
+)-- MM shop_code
+,t7 as (
+SELECT
+	sid,
+	GROUP_CONCAT( ship_to_code SEPARATOR ',' ) AS ship_to_code 
+FROM
+	( SELECT DISTINCT sid, ship_to_code FROM ss7 WHERE channel = 'MM' ORDER BY sid, ship_to_code) a 
+GROUP BY sid
+)  -- MM ship_to_code
+,t8 as (
+SELECT
+	sid,
+	GROUP_CONCAT( proj_name SEPARATOR ',' ) AS proj_name 
+FROM (
+select DISTINCT sid,proj_name from ss7 WHERE channel = 'MSO' ORDER BY sid,proj_name) a
+group by sid
+) -- MSO proj_name
+,t15 as ( 
+SELECT
+	sid,
+	GROUP_CONCAT( shop_code SEPARATOR ',' ) AS mso_shop_code 
+FROM (
+select DISTINCT sid,shop_code from ss7 WHERE channel = 'MSO' ORDER BY sid,shop_code) a
+group by sid
+) -- MSO shop_code
+,t9 as (
+SELECT
+	sid,
+	GROUP_CONCAT( ship_to_code SEPARATOR ',' ) AS ship_to_code 
+FROM
+	( SELECT DISTINCT sid, ship_to_code FROM ss7 WHERE channel = 'MSO' ORDER BY sid, ship_to_code) a 
+GROUP BY sid
+)-- MSO ship_to_code
+,t10 as (
+SELECT distinct
+	a.dawn_id,
+	GROUP_CONCAT( b.body_shop_name SEPARATOR ',' ) as body_shop_name,
+	GROUP_CONCAT( REPLACE(REPLACE(REPLACE(REPLACE(CONCAT( COALESCE(b.ppg_brand1, ''), ',',
+					COALESCE(b.ppg_brand2, ''), ',', 
+					COALESCE(b.ppg_brand3, ''), ',', 
+					COALESCE(b.ppg_brand4, ''), ',', 
+					COALESCE(b.ppg_brand5, ''), ',', 
+					COALESCE(b.ppg_brand6, '') ) 
+	,',,,,,',''),',,,,',''),',,,',''),',,','') SEPARATOR ',' )
+   AS ppg_brand
+	-- b.main_employee_responsible,
+	-- b.sales_manager,
+	-- b.distributor_name_sel
+FROM
+ (select dawn_id,max(updateTime) as updateTime   from fine_dw.dw_pipeline_analysis group by dawn_id) a 
+ left join  fine_dw.dw_pipeline_analysis b on a.dawn_id = b.dawn_id and a.updateTime = b.updateTime
+	GROUP BY dawn_id
+    -- b.main_employee_responsible,
+	-- b.sales_manager,
+	-- b.distributor_name_sel
+) 
+-- 简道云数据
+,t12 as (
+SELECT
+	sid,
+	_year ,
+	GROUP_CONCAT( sales_person_id,',|' ) AS mm_sales_id
+FROM (
+select DISTINCT sid,LEFT(a.sales_month,4) as _year,cs.sales_person_id from ss7 a
+	LEFT JOIN fine_dw.dw_cs_relationship_info cs ON LEFT ( a.sales_month, 4 ) = cs.s_year 
+	AND a.proj_name = cs.proj_name
+ WHERE a.channel = 'MM'
+ ORDER BY sid,LEFT(a.sales_month,4),cs.sales_person_id
+ ) a
+group by sid,_year
+)		-- MM 销售人员
+,t20 as (
+SELECT
+	sid,
+	_year ,
+	GROUP_CONCAT( sales_person,',' ) AS sales_person
+FROM (
+select DISTINCT sid,LEFT(a.sales_month,4) as _year,cs.sales_person from ss7 a
+	LEFT JOIN fine_dw.dw_cs_relationship_info cs ON LEFT ( a.sales_month, 4 ) = cs.s_year 
+	AND a.proj_name = cs.proj_name
+ WHERE a.channel in ('MM','MSO')
+ ORDER BY sid,LEFT(a.sales_month,4),cs.sales_person
+ ) a
+group by sid,_year
+)		-- MM 销售人员
+,t21 as (
+SELECT
+	sid,
+	_year ,
+	GROUP_CONCAT( team_owner,',' ) AS team_owner
+FROM (
+select DISTINCT sid,LEFT(a.sales_month,4) as _year,team_owner from ss7 a
+	LEFT JOIN fine_dw.dw_cs_relationship_info cs ON LEFT ( a.sales_month, 4 ) = cs.s_year 
+	AND a.proj_name = cs.proj_name
+ WHERE a.channel in ('MM','MSO')
+ ORDER BY sid,LEFT(a.sales_month,4),team_owner
+ ) a
+group by sid,_year
+)		-- MM 销售人员
+,t22 as (
+SELECT
+	sid,
+	_year ,
+	GROUP_CONCAT( vendor_name,',' ) AS vendor_name
+FROM (
+select DISTINCT sid,LEFT(a.sales_month,4) as _year,a.vendor_name from ss7 a
+	LEFT JOIN fine_dw.dw_cs_relationship_info cs ON LEFT ( a.sales_month, 4 ) = cs.s_year 
+	AND a.proj_name = cs.proj_name
+ WHERE a.channel in ('MM','MSO')
+ ORDER BY sid,LEFT(a.sales_month,4),a.vendor_name
+ ) a
+group by sid,_year
+)		-- MM 销售人员
+,t13 as (
+SELECT
+	sid,
+	_year ,
+	GROUP_CONCAT( sales_person_id,',|' ) AS mso_sales_id
+FROM (
+select DISTINCT sid,LEFT(a.sales_month,4) as _year,cs.sales_person_id from ss7 a
+	LEFT JOIN fine_dw.dw_cs_relationship_info cs ON LEFT ( a.sales_month, 4 ) = cs.s_year 
+	AND a.proj_name = cs.proj_name
+ WHERE a.channel = 'MSO'
+ ORDER BY sid,LEFT(a.sales_month,4),cs.sales_person_id
+ ) a
+group by sid,_year
+)	-- MM 销售人员
+
+SELECT
+	a.sid as dawn_id,
+	g.body_shop_name,
+	c.proj_name_en as mm_proj_name,
+	e.proj_name as mso_proj_name,
+	d.ship_to_code as mm_ship_to,
+	f.ship_to_code as mso_ship_to,
+	g.ppg_brand,
+	left(l.sales_person,CHAR_LENGTH(l.sales_person)-1) as sales,
+	left(m.team_owner,CHAR_LENGTH(m.team_owner)-1) as  sales_manager,
+	left(n.vendor_name,CHAR_LENGTH(n.vendor_name)-1) as distributor_name,
+	a._year as year,
+	a._month as month,
+	a.sec_1,
+	a.sec_2,
+	a.sec_3,
+	b.sz as sales_value,
+	case 
+		when a._month='01' then 1
+		when a._month='02' then 2
+		when a._month='03' then 3
+		when a._month='Q1' then 4
+		when a._month='04' then 5
+		when a._month='05' then 6
+		when a._month='06' then 7
+		when a._month='Q2' then 8
+		when a._month='07' then 9
+		when a._month='08' then 10
+		when a._month='09' then 11
+		when a._month='Q3' then 12
+		when a._month='10' then 13
+		when a._month='11' then 14
+		when a._month='12' then 15
+		when a._month='Q4' then 16
+	END AS seq ,
+	case when left(j.mm_sales_id,CHAR_LENGTH(j.mm_sales_id)-1) is not null and left(k.mso_sales_id,CHAR_LENGTH(k.mso_sales_id)-1) is not NULL
+	     then 'MM/MSO'
+			 when left(j.mm_sales_id,CHAR_LENGTH(j.mm_sales_id)-1) is not null and left(k.mso_sales_id,CHAR_LENGTH(k.mso_sales_id)-1) is NULL
+	     then 'MM'
+			 when left(j.mm_sales_id,CHAR_LENGTH(j.mm_sales_id)-1) is null and left(k.mso_sales_id,CHAR_LENGTH(k.mso_sales_id)-1) is not NULL
+	     then 'MSO' end as channel,
+	left(j.mm_sales_id,CHAR_LENGTH(j.mm_sales_id)-1) AS mm_sales_id,
+	left(k.mso_sales_id,CHAR_LENGTH(k.mso_sales_id)-1) AS mso_sales_id,
+	h.mm_shop_code,
+	i.mso_shop_code,
+	'dw_transaction_detail_sh' as data_resource,
+	now() as etl_time,
+	STR_TO_DATE(CONCAT(a._year ,'0101') , '%Y%m%d') as report_date
+FROM
+	t3 a
+	LEFT JOIN t5 b ON a.sid = b.sid 
+	AND a._year = b._year 
+	AND a._month = b._month 
+	AND a.sec_2 = b.sec_2 
+	AND a.sec_3 = b.sec_3
+	left join t6 c on a.sid = c.sid
+	left join t7 d on a.sid = d.sid
+	left join t8 e on a.sid = e.sid
+	left join t9 f on a.sid = f.sid
+	left join t14 h on 	a.sid = h.sid
+	left join t15 i on 	a.sid = i.sid
+	left join t10 g on 	a.sid = g.dawn_id
+	left join t12 j on a.sid = j.sid and a._year = j._year
+	left join t20 l on a.sid = l.sid and a._year = l._year
+	left join t21 m on a.sid = m.sid and a._year = m._year
+	left join t22 n on a.sid = n.sid and a._year = n._year
+	left join t13 k on a.sid = k.sid and a._year = k._year
+WHERE concat(a._year,a._month) = ${start_date}  -- 时间参数
+and a._month not like'%Q%'
+
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>dawn_id</name>
+        <length>255</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>dawn_id</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>body_shop_name</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>body_shop_name</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>mm_proj_name</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>mm_proj_name</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>mso_proj_name</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>mso_proj_name</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>mm_ship_to</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>mm_ship_to</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>mso_ship_to</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>mso_ship_to</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ppg_brand</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>ppg_brand</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Binary</type>
+        <storagetype>normal</storagetype>
+        <name>sales</name>
+        <length>-1</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>sales</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Binary</type>
+        <storagetype>normal</storagetype>
+        <name>sales_manager</name>
+        <length>-1</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>sales_manager</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Binary</type>
+        <storagetype>normal</storagetype>
+        <name>distributor_name</name>
+        <length>-1</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>distributor_name</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>year</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>year</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>month</name>
+        <length>2</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>month</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>sec_1</name>
+        <length>3</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>sec_1</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>sec_2</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>sec_2</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>sec_3</name>
+        <length>19</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>sec_3</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>sales_value</name>
+        <length>65</length>
+        <precision>4</precision>
+        <origin>表输入</origin>
+        <comments>sales_value</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>seq</name>
+        <length>15</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>seq</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>channel</name>
+        <length>6</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>channel</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Binary</type>
+        <storagetype>normal</storagetype>
+        <name>mm_sales_id</name>
+        <length>-1</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>mm_sales_id</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Binary</type>
+        <storagetype>normal</storagetype>
+        <name>mso_sales_id</name>
+        <length>-1</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>mso_sales_id</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>mm_shop_code</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>mm_shop_code</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>mso_shop_code</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>mso_shop_code</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>data_resource</name>
+        <length>24</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>data_resource</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>etl_time</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>etl_time</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Date</type>
+        <storagetype>normal</storagetype>
+        <name>report_date</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>report_date</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>表输出</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>fine_dm</connection>
+    <schema/>
+    <table>dm_body_shop_win_sales_tracking</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>dawn_id</column_name>
+        <stream_name>dawn_id</stream_name>
+      </field>
+      <field>
+        <column_name>body_shop_name</column_name>
+        <stream_name>body_shop_name</stream_name>
+      </field>
+      <field>
+        <column_name>mm_proj_name</column_name>
+        <stream_name>mm_proj_name</stream_name>
+      </field>
+      <field>
+        <column_name>mso_proj_name</column_name>
+        <stream_name>mso_proj_name</stream_name>
+      </field>
+      <field>
+        <column_name>mm_ship_to</column_name>
+        <stream_name>mm_ship_to</stream_name>
+      </field>
+      <field>
+        <column_name>mso_ship_to</column_name>
+        <stream_name>mso_ship_to</stream_name>
+      </field>
+      <field>
+        <column_name>ppg_brand</column_name>
+        <stream_name>ppg_brand</stream_name>
+      </field>
+      <field>
+        <column_name>sales</column_name>
+        <stream_name>sales</stream_name>
+      </field>
+      <field>
+        <column_name>sales_manager</column_name>
+        <stream_name>sales_manager</stream_name>
+      </field>
+      <field>
+        <column_name>distributor_name</column_name>
+        <stream_name>distributor_name</stream_name>
+      </field>
+      <field>
+        <column_name>year</column_name>
+        <stream_name>year</stream_name>
+      </field>
+      <field>
+        <column_name>month</column_name>
+        <stream_name>month</stream_name>
+      </field>
+      <field>
+        <column_name>sec_1</column_name>
+        <stream_name>sec_1</stream_name>
+      </field>
+      <field>
+        <column_name>sec_2</column_name>
+        <stream_name>sec_2</stream_name>
+      </field>
+      <field>
+        <column_name>sec_3</column_name>
+        <stream_name>sec_3</stream_name>
+      </field>
+      <field>
+        <column_name>sales_value</column_name>
+        <stream_name>sales_value</stream_name>
+      </field>
+      <field>
+        <column_name>seq</column_name>
+        <stream_name>seq</stream_name>
+      </field>
+      <field>
+        <column_name>channel</column_name>
+        <stream_name>channel</stream_name>
+      </field>
+      <field>
+        <column_name>mm_sales_id</column_name>
+        <stream_name>mm_sales_id</stream_name>
+      </field>
+      <field>
+        <column_name>mso_sales_id</column_name>
+        <stream_name>mso_sales_id</stream_name>
+      </field>
+      <field>
+        <column_name>mm_shop_code</column_name>
+        <stream_name>mm_shop_code</stream_name>
+      </field>
+      <field>
+        <column_name>mso_shop_code</column_name>
+        <stream_name>mso_shop_code</stream_name>
+      </field>
+      <field>
+        <column_name>data_resource</column_name>
+        <stream_name>data_resource</stream_name>
+      </field>
+      <field>
+        <column_name>etl_time</column_name>
+        <stream_name>etl_time</stream_name>
+      </field>
+      <field>
+        <column_name>report_date</column_name>
+        <stream_name>report_date</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
